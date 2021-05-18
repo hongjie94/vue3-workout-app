@@ -1,0 +1,98 @@
+.nav-header
+  width: 100%
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 99
+  background-color: $main-black
+
+.nav
+  max-width: 1024px
+  height: 3em
+  display: flex !important
+  justify-content: space-between
+  align-items: center
+  &__list
+    display: flex
+  &_item
+    margin-bottom: 1rem  
+  &__link, 
+  &__logo, 
+  &__toggle
+    color: $text-color
+    font-weight: 500
+  &__logo:hover
+    color: $bg-yellow
+  &__link:hover
+    transition: .3s
+    color: $bg-yellow
+  &__toggle
+    font-size: 1.3em
+    cursor: cursor
+    
+.active-link
+  color: $bg-yellow
+
+.nav-container
+  max-width: 960px
+  width: calc(100% - 2rem)
+  margin-left: 1rem
+  margin-right: 1rem
+
+ul
+  padding: 0
+  list-style: none
+a
+  text-decoration: none
+  color: $text-color
+
+@media screen and (max-width: 768px)
+  .nav
+    &__menu
+      position: fixed
+      top: -100%
+      left: 0
+      width: 100%
+      padding: 1.5rem 0 1rem
+      text-align: center
+      background-color: $body-color
+      transition: .4s
+      box-shadow: 0 4px 4px rgba(0,0,0,.1)
+      border-radius: 0 0 1rem 1rem
+      z-index: 99
+    &__list
+      display: flex
+      justify-content: center
+      flex-direction: column  
+
+.show-menu
+  top: $nav-height !important
+  display: flex
+  justify-content: center
+  flex-direction: column    
+  
+@media screen and (min-width: 768px)      
+  body
+    margin: 0
+
+  .section
+    padding-top: 8rem
+  
+  .nav
+    height: calc($nav-height + 1.5rem)
+    &__list
+      display: flex
+    &__item
+      margin-left: 2.5rem
+      margin-bottom: 0
+    &__toggle
+      display: none
+    &__item
+      margin-left: 2.5rem
+      margin-bottom: 0
+
+@media screen and (min-width: 960px)
+  .nav-container
+    margin-left: auto
+    margin-right: auto
+
