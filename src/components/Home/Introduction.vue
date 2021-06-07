@@ -4,16 +4,16 @@
       <h1>REACH YOUR GOALS</h1>
       <ul>
         <li>
-          <img src="../assets/sass/img/intro1.png" />
-          <a href="#">Weight Loss</a>
+          <img src="./img/intro1.png" />
+          <a href="#samples">Weight Loss</a>
         </li>
         <li>
-          <img src="../assets/sass/img/intro2.png" />
-          <a href="#">Gain Muscle</a>
+          <img src="./img/intro2.png" />
+          <a href="#samples">Gain Muscle</a>
         </li>
         <li>
-          <img src="../assets/sass/img/intro3.png" />
-          <a href="#">Improve Flexibility</a>
+          <img src="./img/intro3.png" />
+          <a href="#samples">Improve Flexibility</a>
         </li>
       </ul>
     </div>

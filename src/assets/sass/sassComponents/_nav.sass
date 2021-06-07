@@ -23,9 +23,20 @@
     font-weight: 500
   &__logo:hover
     color: $bg-yellow
+    cursor: pointer
+  &__logo
+    display: flex
+    .logo-sub
+      margin: 0
+      padding: 0
+      line-height: 17px
+      margin-top: 7px
+      margin-left: 3px
+      font-size: 15px
   &__link:hover
     transition: .3s
     color: $bg-yellow
+    text-decoration: none
   &__toggle
     font-size: 1.3em
     cursor: cursor
@@ -41,7 +52,7 @@
 
 ul
   padding: 0
-  list-style: none
+  list-style: unset
 a
   text-decoration: none
   color: $text-color

@@ -19,7 +19,7 @@ export default [
     name: 'Insanity Max 30',
     route: 'InsaityMax30',
     category: 'Cardio',
-    imageURL: require('../assets/workoutCovers/InsanityMax30.jpg'),
+    imageURL: require('../assets/workoutCovers/InsanityMax30.jpeg'),
     includes: {
       a: '2 Month Workout',
       b: '6 Days a Week',
@@ -55,7 +55,7 @@ export default [
     name: 'Insanity Asylum Vol. 2',
     route: 'InsaityAsylumv2',
     category: 'Cardio',
-    imageURL: require('../assets/workoutCovers/AsylumVol2.jpg'),
+    imageURL: require('../assets/workoutCovers/AsylumVol2.jpeg'),
     includes: {
       a: '8 Online Workout Videos',
       b: 'Asylum Vol.2 Calendar',
@@ -76,7 +76,7 @@ export default [
     name: 'FOCUS T25',
     category: 'Cardio',
     route: 'FT25',
-    imageURL: require('../assets/workoutCovers/T25.jpg'),
+    imageURL: require('../assets/workoutCovers/T25.jpeg'),
     includes: {
       a: '16 Online Workout Videos',
       b: 'T25 Calendar',
@@ -116,7 +116,7 @@ export default [
     name: 'P90X',
     route: 'P90X',
     category: 'Muscle',
-    imageURL: require('../assets/workoutCovers/P90X.jpg'),
+    imageURL: require('../assets/workoutCovers/P90X.jpeg'),
     includes: {
       a: '13 Online Workout Videos',
       b: 'P90X Calendar',
@@ -137,7 +137,7 @@ export default [
     name: 'P90X2',
     route: 'P90X2',
     category: 'Muscle',
-    imageURL: require('../assets/workoutCovers/P90X2.jpg'),
+    imageURL: require('../assets/workoutCovers/P90X2.jpeg'),
     includes: {
       a: '16 Online Workout Videos',
       b: 'P90X2 Calendar',
@@ -183,7 +183,37 @@ export default [
     name: 'CORE DE FORCE',
     route: 'CDF',
     category: 'Cardio',
-    imageURL: require('../assets/workoutCovers/CDF.jpg'),
+    imageURL: require('../assets/workoutCovers/CDF.jpeg'),
+    includes: {
+      a: '15 Online Workout Vedios',
+      b: 'MAX OUT Calendar',
+      c: 'Download Links'
+    },
+    equipments: {
+      a: 'No Equipment Required'
+    }
+  },
+  {
+    id: 11,
+    name: '3 Week Yoga Retreat',
+    route: 'YogaRetreat',
+    category: 'Yoga',
+    imageURL: require('../assets/workoutCovers/YogaRetreat.jpeg'),
+    includes: {
+      a: '15 Online Workout Vedios',
+      b: 'MAX OUT Calendar',
+      c: 'Download Links'
+    },
+    equipments: {
+      a: 'No Equipment Required'
+    }
+  },
+  {
+    id: 12,
+    name: 'Yog Warrior 365',
+    route: 'yogWarrior365',
+    category: 'Cardio',
+    imageURL: require('../assets/workoutCovers/yogWarrior365.jpeg'),
     includes: {
       a: '15 Online Workout Vedios',
       b: 'MAX OUT Calendar',

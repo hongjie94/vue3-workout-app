@@ -7,8 +7,9 @@ $first-color: #FFDB00
 $first-color-alt: #048654
 $main-black: #393939
 $text-color: #FBFEFD
-$body-color: #FBFEFD
+$body-color:  #f5f5f5
 $introbg-color: #FFFFFF
+$staredleftbg-color: #333128
 $iconbg-color: #CAD3DD
 
 
@@ -16,3 +17,10 @@ $main-font:  'Rubik', sans-serif
 $font-medium: 500
 $font-semi-bold: 600
 
+@mixin grid($cols, $mgn)
+  float: left
+  width: ((100% - (($cols - 1) * $mgn)) / $cols )
+  margin-right: $mgn
+  margin-bottom: $mgn
+  &:nth-child(#{$cols}n)
+    margin-right: 0

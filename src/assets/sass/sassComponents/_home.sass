@@ -1,0 +1,196 @@
+// Hero section
+#hero
+  background-color: $bg-yellow
+  height: 100vh  
+.hero
+  height: 85vh
+  padding: 2rem
+  font-family: $main-font
+  position: relative
+  display: flex
+  justify-content: center
+  img
+    margin-top: 2em
+    padding: 1em
+    width: 50%
+    max-width: 500px
+    max-height: 500px
+    border-radius: 50%
+    object-fit: contain
+  &__content
+    margin-top: 2em
+    color: $main-black
+    padding: 1rem
+    line-height: 1
+    width: 50%
+    display: flex
+    justify-content: center
+    text-align: initial
+    flex-direction: column
+    h1
+      font-size: clamp(2rem, 4vw, 4rem)
+      margin: .5em 0
+      letter-spacing: 8px
+      font-weight: bold
+    p
+      margin-bottom: 2em
+      line-height: 1.5em
+      font-family: 'Roboto', sans-serif
+    .hero__button
+      background-color: #fff !important
+      cursor: pointer
+      outline: none
+      width: 100%
+      height: 100%
+      border-radius: 45px
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1)
+      border: none
+      transition: all 0.3s ease 0s
+      &:hover
+        background-color: #000 !important
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4)
+        transform: translateY(-7px)
+        color: #fff !important
+    a
+      outline: none 
+      border: none
+      font-weight: 500
+      border-radius: 45px
+      color: #000 !important
+      font-family: 'Roboto', sans-serif
+      max-width: 13em
+      font-size: 13px
+      min-height: 3.5em
+      text-transform: uppercase
+      letter-spacing: 2.5px
+      text-decoration: none
+  &__footer
+    height: calc(100vh - 85vh)
+    background: #282E34
+    justify-content: center
+    display: flex
+    align-items: center
+    flex-direction: column
+    p
+      margin-bottom: 0px
+      font-family: 'Roboto', sans-serif
+      letter-spacing: 2px
+    i  
+      font-size: 1.5em
+      cursor: pointer
+      &:hover
+        color: $bg-yellow
+        .bx-fade-down
+
+// Introuction section
+#introduction
+  height: 70vh  
+.intro
+  padding: 2em
+  margin-bottom: 60px
+
+  &::after 
+  content: ""
+  display: block
+  clear: both
+  li 
+    list-style: none
+    float: left
+    width: 33.33%
+    text-align: center
+    padding: 2em 0
+    a
+      color: $main-black
+      text-decoration: none
+      font-weight: bold
+      letter-spacing: 3px
+      &:hover
+        color: $bg-yellow
+        transition: all .5s     
+  img
+    border: 1px solid black
+    width: 60%
+    margin: 20px 20%   
+    padding: 1em
+    border-radius:50%   
+  .wrapper 
+    width: 100%
+    max-width: 1200px
+    margin: 0 auto
+    padding: 0 20px
+    box-sizing: border-box
+    h1
+      color: $main-black
+      margin: 1rem
+      padding: 8px
+      text-align: center
+      letter-spacing: 10px
+
+// Get Started section
+#GetStarted
+  background: $bg-yellow
+  position: relative
+  z-index: 100
+  .GetStarted
+    padding: 0px !important
+    .leftBox
+      background: $staredleftbg-color
+      &__text
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        height: 100%
+        padding: 2em
+        h1
+          font-size: 4em
+          letter-spacing: 1px
+    .middleBox
+      img
+        width: 100%
+      padding: 0px 
+    .rightBox
+      background:#EBC54F
+      padding: 2em
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      h1
+      ul 
+        li
+          margin: 1.5em 0
+          &::marker 
+            color: $main-black 
+            font-size: 1em
+            unicode-bidi: isolate
+            font-variant-numeric: tabular-nums
+            text-transform: none
+            text-indent: 0px !important
+            text-align: start !important
+            text-align-last: start !important
+
+// Sample section
+#samples
+  display: flex
+  justify-content: center
+  align-items: center
+  
+.samples
+  width: 100%
+  max-width: 1200px
+  margin: 0 auto
+  padding: 2rem
+  box-sizing: border-box
+  h1
+    text-align: center
+    margin: 1em 0
+    padding:10px
+    font-family: 'Roboto', sans-serif
+    letter-spacing: 2px
+    color: $main-black  
+  li
+    list-style: none
+    @include grid(6, 2%)
+    img
+      width: 100%
